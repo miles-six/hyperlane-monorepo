@@ -1,5 +1,36 @@
 # @hyperlane-xyz/infra
 
+## 3.8.0
+
+### Minor Changes
+
+- 7d530fd4: Enabled verification of contracts as part of the deployment flow.
+
+  - Solidity build artifact is now included as part of the `@hyperlane-xyz/core` package.
+  - Updated the `HyperlaneDeployer` to perform contract verification immediately after deploying a contract. A default verifier is instantiated using the core build artifact.
+  - Updated the `HyperlaneIsmFactory` to re-use the `HyperlaneDeployer` for deployment where possible.
+  - Minor logging improvements throughout deployers.
+
+### Patch Changes
+
+- 90191f74: Removed basegoerli and moonbasealpha testnets
+- b3a91546: Add logos for plume to SDK
+- 912ced30: TestRecipient as part of core deployer
+- 02e64c9f: Update viction validator set
+- 3ff8eb3c: Patch transfer ownership in hook deployer
+- Updated dependencies [16cb5e19]
+- Updated dependencies [90191f74]
+- Updated dependencies [7d530fd4]
+- Updated dependencies [aea9e143]
+- Updated dependencies [b3a91546]
+- Updated dependencies [912ced30]
+- Updated dependencies [02e64c9f]
+- Updated dependencies [d2c24967]
+- Updated dependencies [3ff8eb3c]
+  - @hyperlane-xyz/sdk@3.8.0
+  - @hyperlane-xyz/helloworld@3.8.0
+  - @hyperlane-xyz/utils@3.8.0
+
 ## 3.7.0
 
 ### Minor Changes
